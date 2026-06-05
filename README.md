@@ -30,7 +30,6 @@ This repository contains Verilog HDL implementations of fundamental shift regist
 
 | File | Description |
 |--------|------------|
-| d_ff.v | D Flip-Flop with asynchronous reset |
 | SISO.v | Serial-In Serial-Out Shift Register |
 | SIPO.v | Serial-In Parallel-Out Shift Register |
 | PISO.v | Parallel-In Serial-Out Shift Register |
