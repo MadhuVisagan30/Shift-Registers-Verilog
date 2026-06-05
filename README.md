@@ -61,5 +61,19 @@ Through this project, the following concepts were explored:
 - Testbench Development
 - Functional Verification using Simulation
 
+- ## Simulation Results
+
+### SISO
+![SISO](SISO/SISO_waveform.png)
+
+### SIPO
+![SIPO](SIPO/SIPO_waveform.png)
+
+### PISO
+![PISO](PISO/PISO_waveform.png)
+
+### PIPO
+![PIPO](PIPO/PIPO_waveform.png)
+
 ## Author
 Madhu Visagan H T
