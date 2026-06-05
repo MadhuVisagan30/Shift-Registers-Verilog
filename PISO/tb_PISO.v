@@ -8,13 +8,11 @@ module tb_PISO;
 
     PISO dut(clk, reset, shift, D, Q);
 
-    // Clock generation
     initial begin
         clk = 0;
         forever #10 clk = ~clk;
     end
 
-    // Stimulus
     initial begin
         reset = 1;
         shift = 0;
@@ -22,18 +20,15 @@ module tb_PISO;
 
         #15 reset = 0;      // t = 15
 
-        #20 D = 4'd5;       // t = 35 (0101)
+        #20 D = 4'd5;       // t = 35
 
-        // Keep shift=0 until the next posedge (50ns)
         #20 shift = 1;      // t = 55
 
-        // Allow enough clocks to shift all bits out
         #100;
 
         $finish;
     end
 
-    // Monitor
     initial begin
         $monitor("t=%0t clk=%b shift=%b D=%b q1=%b q2=%b q3=%b Q=%b",
                  $time, clk, shift, D,
